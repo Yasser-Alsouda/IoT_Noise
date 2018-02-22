@@ -19,7 +19,8 @@ IO.setup(5,IO.IN)
 IO.setup(6,IO.IN)
 IO.setup(13,IO.IN)
 IO.setup(19,IO.IN)
-while 1:                                              
+while 1:
+    if (IO.input(19) == True):
         time.sleep(0.001)
         if (IO.input(19) == True):
             b7=1                                      
