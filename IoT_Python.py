@@ -50,7 +50,7 @@ while 1:
         if (IO.input(27) == True):
             b2=1                                    
  
-  if (IO.input(17) == True):
+    if (IO.input(17) == True):
         time.sleep(0.001)
         if (IO.input(17) == True):
             b1=1                                    
