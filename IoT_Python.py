@@ -1,6 +1,7 @@
 import RPi.GPIO as IO       
 import time                          
-IO.setwarnings(False)         
+IO.setwarnings(False)
+count = 10
 x=1
 b0 =0                                    
 b1 =0
@@ -19,7 +20,8 @@ IO.setup(5,IO.IN)
 IO.setup(6,IO.IN)
 IO.setup(13,IO.IN)
 IO.setup(19,IO.IN)
-while 1:
+while count > 0:
+    count = count -1
     if (IO.input(19) == True):
         time.sleep(0.001)
         if (IO.input(19) == True):
@@ -64,6 +66,6 @@ while 1:
     x = x+(4*b2)+(8*b3)
     x = x+(16*b4)+(32*b5)
     x = x+(64*b6)+(128*b7)                    
-    print ('x = ')                                              
+    print ( x)                                              
     b0=b1=b2=b3=b4=b5=b6=b7=0        
     time.sleep(1)                                   
