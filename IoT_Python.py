@@ -1,8 +1,8 @@
-import RPi.GPIO as IO        # calling for header file which helps us use GPIO’s of PI
-import time                          # calling for time to provide delays in program
-IO.setwarnings(False)         # do not show any warnings
+import RPi.GPIO as IO       
+import time                          
+IO.setwarnings(False)         
 x=1
-b0 =0                                    # integers for storing 8 bits
+b0 =0                                    
 b1 =0
 b2 =0
 b3 =0
@@ -64,6 +64,6 @@ while 1:                                               # execute loop forever
     x = x+(4*b2)+(8*b3)
     x = x+(16*b4)+(32*b5)
     x = x+(64*b6)+(128*b7)                    # representing the bit values from LSB to MSB
-    print ( x)                                              # print the ADC value
+    print ('x = ')                                              # print the ADC value
     b0=b1=b2=b3=b4=b5=b6=b7=0        # reset values
     time.sleep(1)                                   # wait for 10ms
