@@ -66,4 +66,4 @@ while 1:                                               # execute loop forever
     x = x+(64*b6)+(128*b7)                    # representing the bit values from LSB to MSB
     print ( x)                                              # print the ADC value
     b0=b1=b2=b3=b4=b5=b6=b7=0        # reset values
-    time.sleep(0.01)                                   # wait for 10ms
+    time.sleep(1)                                   # wait for 10ms
