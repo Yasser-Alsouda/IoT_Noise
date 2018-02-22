@@ -10,8 +10,8 @@ b4 =0
 b5 =0
 b6 =0
 b7 =0
-IO.setmode (IO.BCM)            # programming the GPIO by BCM pin numbers. (like PIN29 as‘GPIO5’)
-IO.setup(4,IO.IN)                    # initialize GPIO Pins as input
+IO.setmode (IO.BCM)            
+IO.setup(4,IO.IN)                    
 IO.setup(17,IO.IN)
 IO.setup(27,IO.IN)
 IO.setup(22,IO.IN)
