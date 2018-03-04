@@ -42,9 +42,9 @@ while count > 0:
         if (IO.input(5) == True):
             b4=1                                     
 
-    if (IO.input(22) == True):
+    if (IO.input(10) == True):
         time.sleep(0.001)
-        if (IO.input(22) == True):
+        if (IO.input(10) == True):
             b3=1                                     
 
     if (IO.input(27) == True):
